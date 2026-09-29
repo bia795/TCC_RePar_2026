@@ -29,24 +29,25 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Btnenviar = new RoundedButton();
+            this.CmbMarca = new System.Windows.Forms.ComboBox();
+            this.CmbOrigem = new System.Windows.Forms.ComboBox();
+            this.CmbCategoria = new System.Windows.Forms.ComboBox();
+            this.CmbCor = new System.Windows.Forms.ComboBox();
+            this.CmbNumero = new System.Windows.Forms.ComboBox();
+            this.TxtCodigoBarras = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.RbDireito = new System.Windows.Forms.RadioButton();
+            this.RbEsquerdo = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.LblUpload = new System.Windows.Forms.LinkLabel();
+            this.Txtobservacoes = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Dt_data = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtModelo = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,41 +57,42 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.roundedButton1 = new RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Btncalcados = new RoundedButton();
             this.BtnDash = new RoundedButton();
             this.LinkSair = new System.Windows.Forms.LinkLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.listBox5);
-            this.groupBox2.Controls.Add(this.listBox2);
-            this.groupBox2.Controls.Add(this.listBox4);
-            this.groupBox2.Controls.Add(this.listBox3);
-            this.groupBox2.Controls.Add(this.listBox1);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.Btnenviar);
+            this.groupBox2.Controls.Add(this.CmbMarca);
+            this.groupBox2.Controls.Add(this.CmbOrigem);
+            this.groupBox2.Controls.Add(this.CmbCategoria);
+            this.groupBox2.Controls.Add(this.CmbCor);
+            this.groupBox2.Controls.Add(this.CmbNumero);
+            this.groupBox2.Controls.Add(this.TxtCodigoBarras);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.RbDireito);
+            this.groupBox2.Controls.Add(this.RbEsquerdo);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.linkLabel1);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.LblUpload);
+            this.groupBox2.Controls.Add(this.Txtobservacoes);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.Dt_data);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.TxtModelo);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
@@ -106,94 +108,155 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // listBox5
+            // Btnenviar
             // 
-            this.listBox5.DisplayMember = "teste";
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.Location = new System.Drawing.Point(24, 478);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(213, 30);
-            this.listBox5.TabIndex = 38;
-            this.listBox5.ValueMember = "teste";
+            this.Btnenviar.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.Btnenviar.FlatAppearance.BorderSize = 15;
+            this.Btnenviar.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btnenviar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btnenviar.Location = new System.Drawing.Point(432, 525);
+            this.Btnenviar.Name = "Btnenviar";
+            this.Btnenviar.Size = new System.Drawing.Size(197, 40);
+            this.Btnenviar.TabIndex = 15;
+            this.Btnenviar.Text = "Enviar";
+            this.Btnenviar.UseVisualStyleBackColor = true;
+            this.Btnenviar.Click += new System.EventHandler(this.Btnenviar_Click);
             // 
-            // listBox2
+            // CmbMarca
             // 
-            this.listBox2.DisplayMember = "teste";
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(24, 413);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(213, 30);
-            this.listBox2.TabIndex = 37;
-            this.listBox2.ValueMember = "teste";
+            this.CmbMarca.FormattingEnabled = true;
+            this.CmbMarca.Items.AddRange(new object[] {
+            "dakota",
+            "havaianas",
+            "puma",
+            "nike",
+            "all star",
+            "jota pe"});
+            this.CmbMarca.Location = new System.Drawing.Point(27, 176);
+            this.CmbMarca.Name = "CmbMarca";
+            this.CmbMarca.Size = new System.Drawing.Size(210, 21);
+            this.CmbMarca.TabIndex = 43;
             // 
-            // listBox4
+            // CmbOrigem
             // 
-            this.listBox4.DisplayMember = "teste";
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Location = new System.Drawing.Point(24, 355);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(213, 30);
-            this.listBox4.TabIndex = 36;
-            this.listBox4.ValueMember = "teste";
+            this.CmbOrigem.FormattingEnabled = true;
+            this.CmbOrigem.Items.AddRange(new object[] {
+            "salão",
+            "caixa",
+            "estoque"});
+            this.CmbOrigem.Location = new System.Drawing.Point(24, 478);
+            this.CmbOrigem.Name = "CmbOrigem";
+            this.CmbOrigem.Size = new System.Drawing.Size(213, 21);
+            this.CmbOrigem.TabIndex = 42;
             // 
-            // listBox3
+            // CmbCategoria
             // 
-            this.listBox3.DisplayMember = "teste";
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(24, 297);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(213, 30);
-            this.listBox3.TabIndex = 35;
-            this.listBox3.ValueMember = "teste";
+            this.CmbCategoria.FormattingEnabled = true;
+            this.CmbCategoria.Items.AddRange(new object[] {
+            "sandalia",
+            "rasteira",
+            "tenis esportivo",
+            "tenis social",
+            "social",
+            "tenis street",
+            "chinelo",
+            "salto"});
+            this.CmbCategoria.Location = new System.Drawing.Point(24, 413);
+            this.CmbCategoria.Name = "CmbCategoria";
+            this.CmbCategoria.Size = new System.Drawing.Size(213, 21);
+            this.CmbCategoria.TabIndex = 41;
             // 
-            // listBox1
+            // CmbCor
             // 
-            this.listBox1.DisplayMember = "teste";
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(24, 171);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(213, 30);
-            this.listBox1.TabIndex = 33;
-            this.listBox1.ValueMember = "teste";
+            this.CmbCor.FormattingEnabled = true;
+            this.CmbCor.Items.AddRange(new object[] {
+            "azul",
+            "amarelo",
+            "rosa",
+            "branco",
+            "preto",
+            "vermelho",
+            "roxo",
+            "laranja",
+            "cinza"});
+            this.CmbCor.Location = new System.Drawing.Point(24, 355);
+            this.CmbCor.Name = "CmbCor";
+            this.CmbCor.Size = new System.Drawing.Size(213, 21);
+            this.CmbCor.TabIndex = 40;
             // 
-            // textBox8
+            // CmbNumero
             // 
-            this.textBox8.Location = new System.Drawing.Point(274, 171);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(213, 20);
-            this.textBox8.TabIndex = 32;
+            this.CmbNumero.FormattingEnabled = true;
+            this.CmbNumero.Items.AddRange(new object[] {
+            "16/17",
+            "18",
+            "19",
+            "20",
+            "21/22",
+            "23/24",
+            "25/26",
+            "27",
+            "28",
+            "29/30",
+            "31/32",
+            "33/34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48"});
+            this.CmbNumero.Location = new System.Drawing.Point(24, 297);
+            this.CmbNumero.Name = "CmbNumero";
+            this.CmbNumero.Size = new System.Drawing.Size(213, 21);
+            this.CmbNumero.TabIndex = 39;
+            // 
+            // TxtCodigoBarras
+            // 
+            this.TxtCodigoBarras.Location = new System.Drawing.Point(379, 168);
+            this.TxtCodigoBarras.Name = "TxtCodigoBarras";
+            this.TxtCodigoBarras.Size = new System.Drawing.Size(213, 20);
+            this.TxtCodigoBarras.TabIndex = 32;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Bookman Old Style", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(271, 154);
+            this.label13.Location = new System.Drawing.Point(376, 151);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(107, 14);
             this.label13.TabIndex = 31;
             this.label13.Text = "Codigo de barras ";
             // 
-            // radioButton2
+            // RbDireito
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(115, 119);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(55, 17);
-            this.radioButton2.TabIndex = 30;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Direito";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RbDireito.AutoSize = true;
+            this.RbDireito.Location = new System.Drawing.Point(115, 119);
+            this.RbDireito.Name = "RbDireito";
+            this.RbDireito.Size = new System.Drawing.Size(55, 17);
+            this.RbDireito.TabIndex = 30;
+            this.RbDireito.TabStop = true;
+            this.RbDireito.Text = "Direito";
+            this.RbDireito.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // RbEsquerdo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(24, 120);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 17);
-            this.radioButton1.TabIndex = 29;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Esquerdo";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RbEsquerdo.AutoSize = true;
+            this.RbEsquerdo.Location = new System.Drawing.Point(24, 120);
+            this.RbEsquerdo.Name = "RbEsquerdo";
+            this.RbEsquerdo.Size = new System.Drawing.Size(70, 17);
+            this.RbEsquerdo.TabIndex = 29;
+            this.RbEsquerdo.TabStop = true;
+            this.RbEsquerdo.Text = "Esquerdo";
+            this.RbEsquerdo.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -210,50 +273,50 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = global::gatoTemporario.Properties.Resources.tenis__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(489, 19);
+            this.pictureBox2.Location = new System.Drawing.Point(505, 19);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(195, 129);
+            this.pictureBox2.Size = new System.Drawing.Size(179, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // linkLabel1
+            // LblUpload
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.IndianRed;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Purple;
-            this.linkLabel1.Location = new System.Drawing.Point(486, 506);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(110, 13);
-            this.linkLabel1.TabIndex = 26;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "clique para selecionar";
+            this.LblUpload.ActiveLinkColor = System.Drawing.Color.IndianRed;
+            this.LblUpload.AutoSize = true;
+            this.LblUpload.BackColor = System.Drawing.Color.Transparent;
+            this.LblUpload.LinkColor = System.Drawing.Color.Purple;
+            this.LblUpload.Location = new System.Drawing.Point(470, 463);
+            this.LblUpload.Name = "LblUpload";
+            this.LblUpload.Size = new System.Drawing.Size(110, 13);
+            this.LblUpload.TabIndex = 26;
+            this.LblUpload.TabStop = true;
+            this.LblUpload.Text = "clique para selecionar";
             // 
-            // textBox7
+            // Txtobservacoes
             // 
-            this.textBox7.Location = new System.Drawing.Point(395, 257);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(289, 115);
-            this.textBox7.TabIndex = 24;
+            this.Txtobservacoes.Location = new System.Drawing.Point(379, 234);
+            this.Txtobservacoes.Multiline = true;
+            this.Txtobservacoes.Name = "Txtobservacoes";
+            this.Txtobservacoes.Size = new System.Drawing.Size(289, 81);
+            this.Txtobservacoes.TabIndex = 24;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Bookman Old Style", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(392, 240);
+            this.label11.Location = new System.Drawing.Point(376, 217);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 14);
             this.label11.TabIndex = 23;
             this.label11.Text = "Observações";
             // 
-            // dateTimePicker1
+            // Dt_data
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(24, 535);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePicker1.TabIndex = 22;
+            this.Dt_data.Location = new System.Drawing.Point(24, 535);
+            this.Dt_data.Name = "Dt_data";
+            this.Dt_data.Size = new System.Drawing.Size(213, 20);
+            this.Dt_data.TabIndex = 22;
             // 
             // label10
             // 
@@ -275,12 +338,12 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Local de origem";
             // 
-            // textBox4
+            // TxtModelo
             // 
-            this.textBox4.Location = new System.Drawing.Point(24, 234);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(213, 20);
-            this.textBox4.TabIndex = 17;
+            this.TxtModelo.Location = new System.Drawing.Point(24, 234);
+            this.TxtModelo.Name = "TxtModelo";
+            this.TxtModelo.Size = new System.Drawing.Size(213, 20);
+            this.TxtModelo.TabIndex = 17;
             // 
             // label8
             // 
@@ -356,7 +419,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::gatoTemporario.Properties.Resources.addfoto;
-            this.pictureBox5.Location = new System.Drawing.Point(395, 378);
+            this.pictureBox5.Location = new System.Drawing.Point(379, 335);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(289, 177);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -365,11 +428,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(20)))), ((int)(((byte)(131)))));
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.pictureBox4);
             this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.roundedButton1);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.Btncalcados);
             this.groupBox1.Controls.Add(this.BtnDash);
             this.groupBox1.Controls.Add(this.LinkSair);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -378,44 +441,57 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(118)))), ((int)(((byte)(166)))));
-            this.pictureBox3.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = global::gatoTemporario.Properties.Resources.logo_scale_80;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 197);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.roundedButton1.FlatAppearance.BorderSize = 15;
-            this.roundedButton1.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.roundedButton1.Location = new System.Drawing.Point(2, 197);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(197, 40);
-            this.roundedButton1.TabIndex = 9;
-            this.roundedButton1.Text = "Calçados";
-            this.roundedButton1.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(118)))), ((int)(((byte)(166)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 151);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 151);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox4.Image = global::gatoTemporario.Properties.Resources.icone;
+            this.pictureBox4.Location = new System.Drawing.Point(6, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(195, 106);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = global::gatoTemporario.Properties.Resources.logo_scale_80;
+            this.pictureBox3.Location = new System.Drawing.Point(-3, 197);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(37, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Btncalcados
+            // 
+            this.Btncalcados.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.Btncalcados.FlatAppearance.BorderSize = 15;
+            this.Btncalcados.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btncalcados.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btncalcados.Location = new System.Drawing.Point(2, 197);
+            this.Btncalcados.Name = "Btncalcados";
+            this.Btncalcados.Size = new System.Drawing.Size(197, 40);
+            this.Btncalcados.TabIndex = 9;
+            this.Btncalcados.Text = "Calçados";
+            this.Btncalcados.UseVisualStyleBackColor = true;
+            this.Btncalcados.Click += new System.EventHandler(this.Btncalcados_Click);
             // 
             // BtnDash
             // 
@@ -431,6 +507,7 @@
             this.BtnDash.TabIndex = 7;
             this.BtnDash.Text = "Dashboard";
             this.BtnDash.UseVisualStyleBackColor = false;
+            this.BtnDash.Click += new System.EventHandler(this.BtnDash_Click);
             // 
             // LinkSair
             // 
@@ -442,19 +519,7 @@
             this.LinkSair.TabIndex = 4;
             this.LinkSair.TabStop = true;
             this.LinkSair.Text = "Sair";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox4.Image = global::gatoTemporario.Properties.Resources.icone;
-            this.pictureBox4.Location = new System.Drawing.Point(6, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(195, 106);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.LinkSair.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkSair_LinkClicked);
             // 
             // Cadastro
             // 
@@ -473,9 +538,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -487,34 +552,35 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private RoundedButton roundedButton1;
+        private RoundedButton Btncalcados;
         private System.Windows.Forms.PictureBox pictureBox1;
         private RoundedButton BtnDash;
         private System.Windows.Forms.LinkLabel LinkSair;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtModelo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Txtobservacoes;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.DateTimePicker Dt_data;
+        private System.Windows.Forms.LinkLabel LblUpload;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton RbDireito;
+        private System.Windows.Forms.RadioButton RbEsquerdo;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox TxtCodigoBarras;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ComboBox CmbNumero;
+        private System.Windows.Forms.ComboBox CmbOrigem;
+        private System.Windows.Forms.ComboBox CmbCategoria;
+        private System.Windows.Forms.ComboBox CmbCor;
+        private System.Windows.Forms.ComboBox CmbMarca;
+        private RoundedButton Btnenviar;
     }
 }

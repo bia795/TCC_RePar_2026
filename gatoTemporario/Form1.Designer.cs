@@ -96,6 +96,7 @@
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(225, 20);
             this.TxtUsuario.TabIndex = 5;
+            this.TxtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             // 
             // label2
             // 
@@ -114,6 +115,7 @@
             this.TxtSenha.Name = "TxtSenha";
             this.TxtSenha.Size = new System.Drawing.Size(225, 20);
             this.TxtSenha.TabIndex = 3;
+            this.TxtSenha.TextChanged += new System.EventHandler(this.TxtSenha_TextChanged);
             // 
             // label1
             // 
@@ -136,6 +138,7 @@
             this.LblEsqueciSenha.Size = new System.Drawing.Size(154, 18);
             this.LblEsqueciSenha.TabIndex = 1;
             this.LblEsqueciSenha.Text = "Esqueci minha senha";
+            this.LblEsqueciSenha.Click += new System.EventHandler(this.LblEsqueciSenha_Click);
             // 
             // btnEntrar
             // 
@@ -148,6 +151,7 @@
             this.btnEntrar.TabIndex = 0;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // pictureBox1
             // 
@@ -170,6 +174,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "  ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

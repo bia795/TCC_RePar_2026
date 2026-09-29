@@ -29,39 +29,65 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.LinkSair = new System.Windows.Forms.LinkLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.roundedButton3 = new RoundedButton();
-            this.roundedButton1 = new RoundedButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Btncadastro = new RoundedButton();
+            this.Btncalcados = new RoundedButton();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(20)))), ((int)(((byte)(131)))));
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.roundedButton3);
+            this.groupBox1.Controls.Add(this.Btncadastro);
             this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.roundedButton1);
+            this.groupBox1.Controls.Add(this.Btncalcados);
             this.groupBox1.Controls.Add(this.LinkSair);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(210, 590);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::gatoTemporario.Properties.Resources.icone;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(195, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = global::gatoTemporario.Properties.Resources.logo_scale_80;
+            this.pictureBox3.Location = new System.Drawing.Point(7, 143);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(34, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
             // 
             // LinkSair
             // 
@@ -73,6 +99,7 @@
             this.LinkSair.TabIndex = 4;
             this.LinkSair.TabStop = true;
             this.LinkSair.Text = "Sair";
+            this.LinkSair.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkSair_LinkClicked);
             // 
             // groupBox2
             // 
@@ -89,6 +116,19 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = global::gatoTemporario.Properties.Resources.tenis__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(486, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(197, 106);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // groupBox7
             // 
@@ -146,66 +186,29 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Dashboard";
             // 
-            // roundedButton3
+            // Btncadastro
             // 
-            this.roundedButton3.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.roundedButton3.Location = new System.Drawing.Point(7, 189);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(197, 40);
-            this.roundedButton3.TabIndex = 15;
-            this.roundedButton3.Text = "Cadastro de pares";
-            this.roundedButton3.UseVisualStyleBackColor = true;
+            this.Btncadastro.Font = new System.Drawing.Font("Bookman Old Style", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btncadastro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btncadastro.Location = new System.Drawing.Point(7, 189);
+            this.Btncadastro.Name = "Btncadastro";
+            this.Btncadastro.Size = new System.Drawing.Size(197, 40);
+            this.Btncadastro.TabIndex = 15;
+            this.Btncadastro.Text = "Cadastro de pares";
+            this.Btncadastro.UseVisualStyleBackColor = true;
+            this.Btncadastro.Click += new System.EventHandler(this.Btncadastro_Click);
             // 
-            // roundedButton1
+            // Btncalcados
             // 
-            this.roundedButton1.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.roundedButton1.Location = new System.Drawing.Point(7, 143);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(197, 40);
-            this.roundedButton1.TabIndex = 9;
-            this.roundedButton1.Text = "Calçados";
-            this.roundedButton1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Image = global::gatoTemporario.Properties.Resources.tenis__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(486, 8);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(197, 106);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::gatoTemporario.Properties.Resources.icone;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(195, 106);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(118)))), ((int)(((byte)(166)))));
-            this.pictureBox3.BackgroundImage = global::gatoTemporario.Properties.Resources.CellularToast_scale_100_contrast_black;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = global::gatoTemporario.Properties.Resources.logo_scale_80;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 143);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(34, 40);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
+            this.Btncalcados.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btncalcados.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btncalcados.Location = new System.Drawing.Point(7, 143);
+            this.Btncalcados.Name = "Btncalcados";
+            this.Btncalcados.Size = new System.Drawing.Size(197, 40);
+            this.Btncalcados.TabIndex = 9;
+            this.Btncalcados.Text = "Calçados";
+            this.Btncalcados.UseVisualStyleBackColor = true;
+            this.Btncalcados.Click += new System.EventHandler(this.Btncalcados_Click);
             // 
             // Dashboard
             // 
@@ -217,13 +220,14 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -236,13 +240,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private RoundedButton roundedButton1;
+        private RoundedButton Btncalcados;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private RoundedButton roundedButton3;
+        private RoundedButton Btncadastro;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
