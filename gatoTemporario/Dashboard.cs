@@ -37,5 +37,32 @@ namespace gatoTemporario
         {
 
         }
+
+        private void Btncalcados_Click(object sender, EventArgs e)
+        {
+            Calcados proximaPagina = new Calcados();
+           proximaPagina.Show();
+            this.Close();
+        }
+
+        private void Btncadastro_Click(object sender, EventArgs e)
+        {
+            Cadastro proximaPagina = new Cadastro();
+            proximaPagina.Show();
+            this.Close();
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LinkSair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
     }
 }

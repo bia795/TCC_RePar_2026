@@ -23,6 +23,8 @@ namespace gatoTemporario
             
             Application.Run(new Calcados());
             Application.Run(new ParEncontrado());
+            Application.Run(new Registros());
+            Application.Run(new RedefinirSenha());
         }
     }
 }

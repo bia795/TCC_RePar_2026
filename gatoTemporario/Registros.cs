@@ -10,38 +10,38 @@ using System.Windows.Forms;
 
 namespace gatoTemporario
 {
-    public partial class Calcados : Form
+    public partial class Registros : Form
     {
-        public Calcados()
+        public Registros()
         {
             InitializeComponent();
         }
 
-        private void BtnDash_Click(object sender, EventArgs e)
-        {
-            Dashboard proximaPagina = new Dashboard();
-            proximaPagina.Show();
-            this.Close();
-        }
-
         private void Btncadastro_Click(object sender, EventArgs e)
         {
-            Cadastro proximaPagina = new Cadastro();
-            proximaPagina.Show();
-            this.Close();
+            Cadastro cadastro = new Cadastro();
+            cadastro.Show();
+            this.Hide();
         }
 
-        private void BtnRegistros_Click(object sender, EventArgs e)
+        private void Registros_Load(object sender, EventArgs e)
         {
-            Registros proximaPagina = new Registros();
-            proximaPagina.Show();
-            this.Close();
+            pictureBox2.Parent = txtBuscar;
+            pictureBox2.Location = new Point(50, 50);
+            pictureBox2.BackColor = Color.Transparent;
         }
 
         private void LinkSair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
+            this.Hide();
+        }
+
+        private void BtnNovoCadastro_Click(object sender, EventArgs e)
+        {
+            Cadastro cadastro = new Cadastro();
+            cadastro.Show();
             this.Hide();
         }
     }

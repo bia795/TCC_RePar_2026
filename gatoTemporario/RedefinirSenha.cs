@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace gatoTemporario
 {
-    public partial class ParEncontrado : Form
+    public partial class RedefinirSenha : Form
     {
-        public ParEncontrado()
+        public RedefinirSenha()
         {
             InitializeComponent();
         }
 
-        private void ParEncontrado_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void LinkSair_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
         }
     }
 }
